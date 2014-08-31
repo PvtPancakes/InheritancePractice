@@ -12,8 +12,21 @@ package my.concrete;
  */
 public class SalariedEmployee extends Employee {
     
-    public SalariedEmployee(String name, String empNo, int age){
+    private double annualSalary;
+    
+    public SalariedEmployee(String name, String empNo, int age, double annualSalary){
         super(name, empNo, age);
+        this.annualSalary = annualSalary;
     }
+
+    public double getAnnualSalary() {
+        return annualSalary;
+    }
+
+    public void setAnnualSalary(double annualSalary) {
+        this.annualSalary = annualSalary;
+    }
+    
+    
     
 }
