@@ -29,18 +29,22 @@ public class HourlyEmployee implements Employee {
         this.hoursWorked = hoursWorked;
     }
     
+    @Override
     public String getName(){
         return name;
     }
     
+    @Override
     public String getEmpNo(){
         return empNo;
     }
     
+    @Override
     public int getAge(){
         return age;
     }
     
+    @Override
     public double getPay(){
         return hoursWorked * wage;
     }
