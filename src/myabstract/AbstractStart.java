@@ -1,4 +1,4 @@
-package myinterface;
+package myabstract;
 
 /**
  *
