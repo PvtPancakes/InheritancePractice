@@ -16,5 +16,6 @@ public interface Employee {
     public String getEmpNo();
     public int getAge();
     public double getPay();
+    public void setAge(int age);
     
 }

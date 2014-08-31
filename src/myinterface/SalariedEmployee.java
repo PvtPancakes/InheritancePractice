@@ -44,6 +44,12 @@ public class SalariedEmployee implements Employee{
         return annualSalary;
     }
     
-    
+    @Override
+    public void setAge(int age){
+        if(age > 0 && age < 130) 
+            this.age = age;
+        else
+            this.age = -1;
+    }
     
 }

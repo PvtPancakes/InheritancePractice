@@ -26,5 +26,5 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Em
     public double getPay(){
         return super.getPay() + commission;
     }
-    
+
 }

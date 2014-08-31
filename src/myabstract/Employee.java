@@ -39,7 +39,10 @@ public abstract class Employee {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if(age > 0 && age < 130) 
+            this.age = age;
+        else
+            this.age = -1;
     }
     
     

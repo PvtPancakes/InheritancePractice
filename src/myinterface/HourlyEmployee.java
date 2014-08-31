@@ -49,4 +49,12 @@ public class HourlyEmployee implements Employee {
         return hoursWorked * wage;
     }
     
+    @Override
+    public void setAge(int age){
+        if(age > 0 && age < 130) 
+            this.age = age;
+        else
+            this.age = -1;
+    }
+    
 }
