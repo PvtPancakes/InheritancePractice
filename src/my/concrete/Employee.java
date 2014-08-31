@@ -12,6 +12,30 @@ package my.concrete;
  */
 public class Employee {
     
+    private String name;
+    private String empNo;
+    private int age;
     
+    public Employee(String name, String empNo, int age){
+        this.name = name;
+        this.empNo = empNo;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmpNo() {
+        return empNo;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    
+    public void setAge(int age){
+        this.age = age;
+    }
     
 }
