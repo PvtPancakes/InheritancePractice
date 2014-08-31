@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package my.concrete;
+
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  *
@@ -12,11 +9,16 @@ package my.concrete;
  */
 public class ConcreteStart {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+            
+        Employee emp1 = new Employee("Tim", "0032103", 34);
+        HourlyEmployee emp2 = new HourlyEmployee("Sarah", "0032107", 29, 8.5);
+        
+        emp2.setHoursWorked(32);
+        
+        System.out.println(emp1.getName() + ", " + emp1.getEmpNo() + ", " + emp1.getAge());
+        System.out.println(emp2.getName() + ", " + emp2.getEmpNo() + ", " + emp2.getAge() + ", $" + emp2.getPay());
+        
     }
     
 }
