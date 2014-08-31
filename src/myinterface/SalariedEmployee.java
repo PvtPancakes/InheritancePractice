@@ -46,9 +46,10 @@ public class SalariedEmployee implements Employee{
     
     @Override
     public void setAge(int age){
-        if(age > 0 && age < 130) 
+        if(age > 0 && age <= 130) 
             this.age = age;
         else
+            System.out.println("Age was out of bounds (1-130)");
             this.age = -1;
     }
     
